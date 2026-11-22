@@ -47,7 +47,7 @@
 
   <header class="site-header">
     <div class="container nav-wrap">
-      <a class="brand" href="#top" aria-label="Stephanie Campos, back to top">SC</a>
+      <a class="brand" href="#top">Stephanie Campos</a>
       <nav aria-label="Primary">
         <ul class="nav-list">
           <li><a href="#about">About</a></li>
@@ -73,14 +73,13 @@
           <p class="status"><span class="status-dot" aria-hidden="true"></span> Open to full-time software engineering roles</p>
           <div class="cta-row">
             <a class="btn btn-primary" href="#projects">View projects</a>
-            <a class="btn" href="assets/resume.pdf" download>Download resume (PDF)</a>
+            <a class="btn" href="assets/resume.pdf" download="Stephanie-Campos-Resume.pdf">Download resume (PDF)</a>
             <a class="btn btn-ghost" href="#contact">Get in touch</a>
           </div>
         </div>
         <figure class="avatar">
           <div class="avatar-frame">
-            <span class="avatar-initials" aria-hidden="true">SC</span>
-            <img src="assets/stephanie.jpg" alt="Portrait of Stephanie Campos" width="480" height="480" onerror="this.remove()">
+            <img src="assets/stephanie.jpg" alt="Portrait of Stephanie Campos" width="480" height="480">
           </div>
         </figure>
       </div>
@@ -92,7 +91,7 @@
         <h2 id="about-title" class="section-title">About</h2>
         <div class="about-grid">
           <div>
-            <p>I am a software engineer who works across machine learning, backend systems, and full-stack web development. My senior capstone, a real-time voice-preserving translation system, received Santa Clara University's CSEN Award for Technical Excellence. I also co-authored a paper accepted to IEEE CCNC 2027 on reinforcement-learning-based network optimization.</p>
+            <p>I am a software engineer who works across machine learning, backend systems, and full-stack web development. My senior design project, a real-time voice-preserving translation system, received Santa Clara University's CSEN Award for Technical Excellence. I also co-authored a paper accepted to IEEE CCNC 2027 on reinforcement-learning-based network optimization.</p>
             <p>Before my degree, I taught Python through game development with Pygame and Raspberry Pi robotics to 20 middle school students. I care about clear code, measured results, and explaining technical work to people who do not share my background.</p>
           </div>
           <dl class="facts">
@@ -116,7 +115,7 @@
           <article class="card">
             <header class="card-header">
               <h3>Mimica: Real-Time Voice-Preserving Translation</h3>
-              <p class="card-meta">Senior capstone &middot; 4-person team &middot; Jun 2025 to May 2026</p>
+              <p class="card-meta">Senior design project &middot; 4-person team &middot; <span class="nowrap">Jun 2025 to May 2026</span></p>
             </header>
             <p>A real-time speech-to-speech translation pipeline (ASR, neural machine translation, and voice-cloned text-to-speech) built to keep the speaker's own voice in the translated output.</p>
             <ul class="card-points">
@@ -128,27 +127,25 @@
             <ul class="tags" aria-label="Technologies used">
               <li>Python</li><li>PyTorch</li><li>Coqui XTTS v2</li><li>AWS EC2</li>
             </ul>
-            <!-- TODO: replace href with the public repo URL, or remove this link if the code is private -->
-            <p class="card-links"><a href="https://github.com/StephanieLCampos" target="_blank" rel="noopener">Code on GitHub<span class="sr-only"> (opens in a new tab)</span></a></p>
+            <p class="card-links"><a href="https://github.com/StephanieLCampos/Mimica-Senior-Design" target="_blank" rel="noopener">Code on GitHub<span class="sr-only"> (opens in a new tab)</span></a></p>
           </article>
 
           <!-- Project 2 -->
           <article class="card">
             <header class="card-header">
-              <h3>QUIC Congestion-Control Optimization with Q-Learning</h3>
-              <p class="card-meta">Research Assistant, WIN Lab, Santa Clara University &middot; Aug 2025 to Jun 2026</p>
+              <h3>QUIC Congestion-Control Optimization with Q&#8209;Learning</h3>
+              <p class="card-meta">Research Assistant, WIN Lab, Santa Clara University &middot; <span class="nowrap">Aug 2025 to Jun 2026</span></p>
             </header>
             <p>A reinforcement-learning agent that tunes QUIC and CUBIC congestion-control parameters in real time across video streaming, file transfer, and video conferencing flows that share one bottleneck.</p>
             <ul class="card-points">
               <li>Monitored per-connection latency, throughput, and jitter to adjust protocol parameters during live runs.</li>
               <li>Reduced p95 video frame-completion delay by 113.8 ms and raised video completion rate by 3.22 percentage points against a static RFC-aligned baseline across 20 held-out trials.</li>
-              <li>Co-authored a paper accepted to IEEE CCNC 2027.</li>
+              <li>Improved total receiver goodput while preserving file-transfer throughput.</li>
             </ul>
             <ul class="tags" aria-label="Technologies used">
               <li>Python</li><li>Q-learning</li><li>QUIC</li><li>Docker</li>
             </ul>
-            <!-- TODO: replace with the paper link once it is published, e.g. IEEE Xplore -->
-            <p class="card-links"><a href="https://github.com/StephanieLCampos" target="_blank" rel="noopener">Code on GitHub<span class="sr-only"> (opens in a new tab)</span></a></p>
+            <p class="card-links"><a href="https://github.com/StephanieLCampos/QUIC_protocol_research" target="_blank" rel="noopener">Code on GitHub<span class="sr-only"> (opens in a new tab)</span></a></p>
           </article>
 
           <!-- Project 3 -->
@@ -157,24 +154,23 @@
               <h3>Homey: Roommate-Matching Web App</h3>
               <p class="card-meta">3-person team &middot; Sep 2025 to Dec 2025</p>
             </header>
-            <p>A swipe-based platform that matches individuals and groups for shared housing, with real-time updates for both.</p>
+            <p>A swipe-based platform that matches individuals and groups for shared housing, with real-time updates for every member.</p>
             <ul class="card-points">
               <li>Designed and built a backend REST API with 38 Express endpoints and 9 Mongoose schemas, including a dual-entity feed for individual and group profiles.</li>
               <li>Designed the group-formation state machine, covering profile suspension, cascading match invalidation across 4 MongoDB collections, audit-trail snapshots, and automatic group teardown.</li>
-              <li>Found and fixed race conditions through concurrent-session testing by adding a server-side guard chain before writes and 17 typed Socket.io events.</li>
+              <li>Found and fixed race conditions through concurrent-session testing by adding a server-side guard chain before writes, and added 17 typed Socket.io events that keep clients in sync without polling.</li>
             </ul>
             <ul class="tags" aria-label="Technologies used">
               <li>React</li><li>TypeScript</li><li>Node.js</li><li>Express</li><li>MongoDB</li><li>Socket.io</li><li>Docker</li>
             </ul>
-            <!-- TODO: replace with the Homey repo URL -->
-            <p class="card-links"><a href="https://github.com/StephanieLCampos" target="_blank" rel="noopener">Code on GitHub<span class="sr-only"> (opens in a new tab)</span></a></p>
+            <p class="card-links"><a href="https://github.com/StephanieLCampos/Homey" target="_blank" rel="noopener">Code on GitHub<span class="sr-only"> (opens in a new tab)</span></a></p>
           </article>
 
           <!-- Project 4 -->
           <article class="card">
             <header class="card-header">
               <h3>EchoCare: AI Caregiving App</h3>
-              <p class="card-meta">24-hour hackathon (Hack for Humanity) &middot; Team of 6 &middot; Jan 2026</p>
+              <p class="card-meta">24-hour hackathon (Hack for Humanity) &middot; 6-person team &middot; Jan 2026</p>
             </header>
             <p>A cross-platform (iOS and Android) app that delivers medication and task reminders in a caregiver's cloned voice.</p>
             <ul class="card-points">
@@ -184,8 +180,7 @@
             <ul class="tags" aria-label="Technologies used">
               <li>React Native</li><li>TypeScript</li><li>Node.js</li><li>Firebase</li><li>ElevenLabs</li>
             </ul>
-            <!-- TODO: replace with the EchoCare repo URL -->
-            <p class="card-links"><a href="https://github.com/StephanieLCampos" target="_blank" rel="noopener">Code on GitHub<span class="sr-only"> (opens in a new tab)</span></a></p>
+            <p class="card-links"><a href="https://github.com/StephanieLCampos/EchoCare" target="_blank" rel="noopener">Code on GitHub<span class="sr-only"> (opens in a new tab)</span></a></p>
           </article>
 
         </div>
@@ -204,7 +199,8 @@
               <p class="timeline-date">Aug 2025 to Jun 2026</p>
             </div>
             <ul class="card-points">
-              <li>Built and evaluated the Q-learning network-optimization agent described in the project above, with a paper accepted to IEEE CCNC 2027.</li>
+              <li>Built a Q-learning agent that tunes QUIC and CUBIC congestion-control parameters in real time across 3 concurrent applications sharing a network bottleneck.</li>
+              <li>Co-authored a paper on this work accepted to IEEE CCNC 2027.</li>
             </ul>
           </li>
           <li class="timeline-item">
@@ -238,19 +234,18 @@
         <div>
           <h2 id="skills-title" class="section-title">Skills</h2>
           <dl class="skill-list">
-            <div><dt>Languages</dt><dd>Python, C, C++, TypeScript, JavaScript</dd></div>
+            <div><dt>Languages</dt><dd>Python, C, C++, TypeScript, JavaScript, PHP</dd></div>
             <div><dt>Machine learning</dt><dd>PyTorch, scikit-learn, knowledge distillation</dd></div>
             <div><dt>Backend and cloud</dt><dd>Node.js, Express.js, Firebase, AWS (EC2), Docker, MongoDB, MySQL, SQLite, Socket.io</dd></div>
             <div><dt>Frontend</dt><dd>React, React Native, HTML, CSS</dd></div>
-            <div><dt>Tools</dt><dd>Git, VS Code, Claude Code</dd></div>
+            <div><dt>Tools</dt><dd>Git, Claude Code</dd></div>
           </dl>
         </div>
         <div>
-          <h2 class="section-title section-title-sm">Honors and publications</h2>
+          <h2 class="section-title section-title-secondary">Honors and publications</h2>
           <ul class="honors">
             <li><strong>CSEN Award for Technical Excellence</strong>, Santa Clara University, for the Mimica senior design project</li>
             <li><strong>IEEE CCNC 2027</strong>, co-authored paper accepted (QUIC optimization with Q-learning)</li>
-            <li><strong>Hack for Humanity</strong>, shipped a working prototype in a 24-hour hackathon (EchoCare)</li>
           </ul>
         </div>
       </div>
@@ -262,7 +257,7 @@
         <h2 id="education-title" class="section-title">Education</h2>
         <div class="edu">
           <h3>Santa Clara University</h3>
-          <p>B.S. in Computer Science and Engineering &middot; Graduated June 2026</p>
+          <p>B.S. in Computer Science and Engineering &middot; Graduated Jun 2026</p>
           <p class="coursework"><strong>Relevant coursework:</strong> Machine Learning, Theory of Algorithms, Computer Networks, Data Structures in C, Advanced Programming in C, Web Development, Logic Design</p>
         </div>
       </div>
@@ -277,7 +272,7 @@
           <a class="btn btn-primary" href="mailto:stephanie.ls.campos@gmail.com">stephanie.ls.campos@gmail.com</a>
           <a class="btn" href="https://www.linkedin.com/in/StephanieLCampos" target="_blank" rel="noopener">LinkedIn<span class="sr-only"> (opens in a new tab)</span></a>
           <a class="btn" href="https://github.com/StephanieLCampos" target="_blank" rel="noopener">GitHub<span class="sr-only"> (opens in a new tab)</span></a>
-          <a class="btn" href="assets/resume.pdf" download>Resume (PDF)</a>
+          <a class="btn" href="assets/resume.pdf" download="Stephanie-Campos-Resume.pdf">Resume (PDF)</a>
         </div>
       </div>
     </section>
@@ -287,7 +282,7 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <p>&copy; <span id="year">2026</span> Stephanie Campos</p>
-      <p>Built with plain HTML and CSS, hosted free on GitHub Pages.</p>
+      <p>Designed and built from scratch with HTML, CSS, and JavaScript. <a href="https://github.com/StephanieLCampos/StephanieLCampos.github.io" target="_blank" rel="noopener">View source<span class="sr-only"> (opens in a new tab)</span></a></p>
     </div>
   </footer>
 

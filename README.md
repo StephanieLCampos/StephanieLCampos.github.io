@@ -17,8 +17,8 @@ Live URL once deployed: https://stephanielcampos.github.io
 ├── .nojekyll         Tells GitHub Pages to serve files as-is
 └── assets/
     ├── resume.pdf    Downloadable resume (keep the filename, or update the links in index.html)
-    ├── favicon.svg   Browser tab icon
-    └── stephanie.jpg Portrait (ADD THIS; see below)
+    ├── favicon.svg   Browser tab icon ("SC")
+    └── stephanie.jpg Portrait (hero image and social preview)
 ```
 
 ## Deploy to GitHub Pages (free)
@@ -44,10 +44,10 @@ Every later change is live after you push to `main`.
 
 ## Before you publish: checklist
 
-- [ ] **Add your photo** as `assets/stephanie.jpg`. Use a square crop of about 800 x 800 px, under 300 KB, with your face centered in the top half. Until it is added, the page shows "SC" initials, so nothing breaks.
-- [ ] **Replace the placeholder project links.** Every project card links to `github.com/StephanieLCampos`. Search `TODO` in `index.html` and swap in each repo URL. Remove any link for a private repo rather than leaving it broken.
-- [ ] **Add the paper link** for the IEEE CCNC 2027 paper once it is published (IEEE Xplore or arXiv).
-- [ ] **Check the contact email** in `index.html` and the JSON-LD block in `<head>`.
+- [x] **Add your photo** as `assets/stephanie.jpg` (cropped from `profile_picture.JPG`).
+- [x] **Replace the placeholder project links.** Each project card links to its own repo.
+- [ ] **Add the paper link** for the IEEE CCNC 2027 paper once it is published (IEEE Xplore or arXiv). Add it next to the QUIC card's GitHub link.
+- [x] **Check the contact email** in `index.html` and the JSON-LD block in `<head>`.
 - [ ] **Update the resume.** When you revise `resume.pdf`, replace `assets/resume.pdf` with the new file, and keep the content on the site consistent with it.
 - [ ] **Update `sitemap.xml` `lastmod`** whenever you make a substantial change.
 - [ ] **Run a check.** Open the site in Chrome, run Lighthouse (DevTools > Lighthouse) for Performance, Accessibility, Best Practices, and SEO, and test on a phone-width window.
