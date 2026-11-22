@@ -174,11 +174,12 @@
             </header>
             <p>A cross-platform (iOS and Android) app that delivers medication and task reminders in a caregiver's cloned voice.</p>
             <ul class="card-points">
-              <li>Built a Node.js and Express microservice that integrates the ElevenLabs API to clone a voice from a 30-second sample and generate personalized reminder audio.</li>
-              <li>Worked on backend and AI features, including the Firestore database, and shipped a working prototype within the 24-hour window.</li>
+              <li>Implemented the AI voice pipeline with ElevenLabs and Google Cloud Translation: a 30-second sample becomes a cloned voice, and typed reminders are translated into 9 languages and spoken in the caregiver's voice.</li>
+              <li>Built the Firebase backend behind it: Cloud Functions for voice cloning and text-to-speech, the Firestore data model, and audio storage in Firebase Storage, with API keys kept server-side in Secret Manager.</li>
+              <li>Built a Node.js and Express version of the voice service for local development, and shipped a working prototype within the 24-hour window.</li>
             </ul>
             <ul class="tags" aria-label="Technologies used">
-              <li>React Native</li><li>TypeScript</li><li>Node.js</li><li>Firebase</li><li>ElevenLabs</li>
+              <li>React Native</li><li>TypeScript</li><li>Node.js</li><li>Firebase</li><li>Google Cloud</li><li>ElevenLabs</li>
             </ul>
             <p class="card-links"><a href="https://github.com/StephanieLCampos/EchoCare" target="_blank" rel="noopener">Code on GitHub<span class="sr-only"> (opens in a new tab)</span></a></p>
           </article>
@@ -236,7 +237,7 @@
           <dl class="skill-list">
             <div><dt>Languages</dt><dd>Python, C, C++, TypeScript, JavaScript, PHP</dd></div>
             <div><dt>Machine learning</dt><dd>PyTorch, scikit-learn, knowledge distillation</dd></div>
-            <div><dt>Backend and cloud</dt><dd>Node.js, Express.js, Firebase, AWS (EC2), Docker, MongoDB, MySQL, SQLite, Socket.io</dd></div>
+            <div><dt>Backend and cloud</dt><dd>Node.js, Express.js, Firebase, Google Cloud, AWS (EC2), Docker, MongoDB, MySQL, SQLite, Socket.io</dd></div>
             <div><dt>Frontend</dt><dd>React, React Native, HTML, CSS</dd></div>
             <div><dt>Tools</dt><dd>Git, Claude Code</dd></div>
           </dl>
